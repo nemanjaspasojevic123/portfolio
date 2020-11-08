@@ -1,0 +1,25 @@
+.nav-bar {
+    background-color: #21ce9a;
+}
+
+.nav-fildes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 100px;
+    padding-bottom: 10px;
+}
+
+.nav-filed {
+    margin-left: 20px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    :hover {
+        color: blue;
+    }
+}
+

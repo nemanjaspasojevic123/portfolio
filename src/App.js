@@ -1,5 +1,5 @@
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import About from './components/About';
 import Contact from './components/Contact';
 import Education from './components/Education';
