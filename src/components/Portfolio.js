@@ -2,13 +2,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
-import lincura from '../assets/lincura.png';
-import weather from '../assets/weather.png';
-import todo from '../assets/todoList.png';
-import pixabay from '../assets/pixabay.png';
-import girlWarrior from '../assets/Margot.jpg';
-import jelena from '../assets/Jelena1.jpg';
-import table from '../assets/Prikaz 1.png';
+import '../assets/css/Portfolio.min.css';
+import lincura from '../assets/images/lincura.png';
+import weather from '../assets/images/weather.png';
+import todo from '../assets/images/todoList.png';
+import pixabay from '../assets/images/pixabay.png';
+import girlWarrior from '../assets/images/Margot.jpg';
+import jelena from '../assets/images/Jelena1.jpg';
+import table from '../assets/images/Prikaz 1.png';
 
 const Portfolio = () => {
     return (

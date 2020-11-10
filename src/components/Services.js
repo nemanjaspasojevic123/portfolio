@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
+import '../assets/css/Services.min.css';
 
 const Services = () => {
     return (
@@ -22,7 +23,7 @@ const Services = () => {
 
                                 <div className="services-contentItem">
                                     <div className="services-contentItemIcon">
-                                    <i className="fas fa-phone-alt"></i>
+                                    <i className="fas fa-cubes"></i>
                                     </div>
                                     <div className="services-contentItemText">
                                     <p>Web i 3D dizajn</p>

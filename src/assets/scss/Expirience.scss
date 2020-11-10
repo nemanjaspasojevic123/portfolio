@@ -1,0 +1,16 @@
+@import '../variables';
+@import '../animations';
+@import '../buttons';
+
+.box-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-sliderEducationLink {
+    @include button();
+}
+
+.box-sliderContactLink {
+    @include button();
+}

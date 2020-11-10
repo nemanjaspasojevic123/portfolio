@@ -1,0 +1,31 @@
+@import '../variables';
+@import '../animations';
+
+.nav-bar {
+    background-image: url('../images/navBar-texture.jpg');
+    border-bottom: solid 1px $secondary-color;
+}
+
+.nav-fildes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 100px;
+    padding: 20px;
+}
+
+.nav-filed {
+    margin-left: 30px;
+}
+
+.navLink {
+    font-family: $ff-secondary;
+    text-transform: uppercase;
+    color: $secondary-color;
+    text-decoration: none;
+    :hover{
+        animation: navigation 3s infinite;
+    }
+}
+
+

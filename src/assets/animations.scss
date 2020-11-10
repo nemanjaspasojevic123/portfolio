@@ -1,0 +1,13 @@
+@import './variables';
+
+@keyframes navigation {
+    0% {
+        color: $secondary-color;
+    }
+    50% {
+        color: #ffffff;
+    }
+    100% {
+        color: $secondary-color;
+    }
+  }
