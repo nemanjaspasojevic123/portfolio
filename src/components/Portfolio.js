@@ -9,83 +9,68 @@ import todo from '../assets/images/todoList.png';
 import pixabay from '../assets/images/pixabay.png';
 import girlWarrior from '../assets/images/Margot.jpg';
 import jelena from '../assets/images/Jelena1.jpg';
-import table from '../assets/images/Prikaz 1.png';
+import table from '../assets/images/Render bilijar.jpg';
 
 const Portfolio = () => {
     return (
         <>
             <NavBar />
-                <section className="box">
-                    <div className="box-inner">
+                <section className="portfolio-box">
                         <div className="portfolio">
-                        <h1>Moji radovi</h1>
-                            <div className="portfolio-items">
+                            <h1 className="portfolio-subject">Moji radovi</h1>
 
+                            <div className="portfolio-items">
                                 <div className="portfolio-item">
-                                    <div className="portfolio-itemImg">
-                                        <a href="https://lincura.netlify.app/"><img src={lincura} alt="noImg" height="200px"></img></a>    
-                                        <h3><a href="https://lincura.netlify.app/">Lincura sajt</a></h3>
-                                    </div>
+                                        <a href="https://lincura.netlify.app/"><img src={lincura} alt="noImg" className="portfolio-img"></img></a>    
+                                        <h3 className="portfolio-itemTitle"><a href="https://lincura.netlify.app/" className="portfolio-itemLink">Lincura sajt</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Website</span>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
-                                    <div className="portfolio-itemImg">
-                                        <a href="https://weathermyapp.netlify.app/"><img src={weather} alt="" height="200px"></img></a>
-                                        <h3><a href="https://weathermyapp.netlify.app/">Weather App</a></h3>
-                                    </div>
+                                        <a href="https://weathermyapp.netlify.app/"><img src={weather} alt="" className="portfolio-img"></img></a>
+                                        <h3 className="portfolio-itemTitle"><a href="https://weathermyapp.netlify.app/" className="portfolio-itemLink">Weather App</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>React JS App</span>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
-                                    <div className="portfolio-itemImg">
-                                        <a href="https://nemanjaspasojevic123.github.io"><img src={pixabay} alt="" height="200px"></img></a>  
-                                        <h3><a href="https://nemanjaspasojevic123.github.io">Pixabay Gallery</a></h3>
-                                    </div>
+                                        <a href="https://nemanjaspasojevic123.github.io"><img src={pixabay} alt="" className="portfolio-img"></img></a>  
+                                        <h3 className="portfolio-itemTitle"><a href="https://nemanjaspasojevic123.github.io" className="portfolio-itemLink">Pixabay Gallery</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>React JS App</span>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
-                                    <div className="portfolio-itemImg">
-                                        <a href="https://mojatodolista.netlify.app/"><img src={todo} alt="" height="200px"></img></a>
-                                        <h3><a href="https://mojatodolista.netlify.app/">ToDo List</a></h3>
-                                    </div>
+                                        <a href="https://mojatodolista.netlify.app/"><img src={todo} alt="" className="portfolio-img"></img></a>
+                                        <h3 className="portfolio-itemTitle"><a href="https://mojatodolista.netlify.app/" className="portfolio-itemLink">ToDo List</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>React JS App</span>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
-                                    <div className="portfolio-itemImg">
-                                        <a href="#"><img src={table} alt="" height="200px"></img></a>
-                                        <h3><a href="https://www.behance.net/gallery/101871001/BilliarDining-Table">BilliarDining Table</a></h3>
-                                    </div>
+                                        <a href="#"><img src={table} alt="" className="portfolio-img"></img></a>
+                                        <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/101871001/BilliarDining-Table" className="portfolio-itemLink">BilliarDining Table</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>3D Design</span>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
-                                    <div className="portfolio-itemImg">
-                                        <a href="#"><img src={girlWarrior} alt="" height="200px"></img></a>
-                                        <h3><a href="https://www.behance.net/gallery/104711155/Character-Design-Girl-Warrior">Girl Warrior</a></h3>
-                                    </div>
+                                        <a href="#"><img src={girlWarrior} alt="" className="portfolio-img"></img></a>
+                                        <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/104711155/Character-Design-Girl-Warrior" className="portfolio-itemLink">Girl Warrior</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Character Design</span>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
-                                    <div className="portfolio-itemImg">
-                                        <a href="#"><img src={jelena} alt="" height="200px"></img></a>
-                                        <h3><a href="https://www.behance.net/gallery/103926293/Jelena">Jelena</a></h3>
-                                    </div>
+                                        <a href="#"><img src={jelena} alt="" className="portfolio-img"></img></a>
+                                        <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/103926293/Jelena" className="portfolio-itemLink">Jelena</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Character Design</span>
                                         </div>
@@ -97,7 +82,6 @@ const Portfolio = () => {
                             <Link to='/about' className='box-sliderAboutLink'><span><i className="fas fa-long-arrow-alt-left"></i> O meni</span></Link>
                             <Link to='/services' className='box-sliderServicesLink'><span>Usluge <i className="fas fa-long-arrow-alt-right"></i></span></Link>
                         </div>
-                    </div>
                 </section>
         </>
     )

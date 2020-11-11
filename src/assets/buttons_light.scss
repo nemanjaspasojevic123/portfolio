@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+@mixin button_light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border: 1px solid #ffffff;
+  padding: 0 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  transition: color .3s ease, background-color .3s ease;
+
+  span {
+    position: relative;
+
+    i {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width .3s ease;
+  }
+
+  &:hover {
+    color: $primary-border-color;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+}
