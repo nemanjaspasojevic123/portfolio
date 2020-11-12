@@ -14,6 +14,7 @@
     display: block;
     justify-content: center;
     align-items: center;
+    margin: 20px auto;
 }
 
 .services-subject {
@@ -29,6 +30,12 @@
     margin: 0 auto;
     width: 40%;
     border: 2px solid $secondary-color;
+    margin: 20px auto;
+    background-color: rgba($color: #bdbcbc, $alpha: 0.7);
+}
+
+.services-contentIcon {
+    text-align: center;
 }
 
 .services-contentFirstItem {
@@ -48,6 +55,7 @@
     margin: 0 auto;
     width: 70%;
     border: 2px solid $secondary-color;
+    background-color: rgba($color: #bdbcbc, $alpha: 0.7);
 }
 
 .services-sub {
@@ -56,6 +64,17 @@
     color: $primary-color;
     margin-top: 0px;
     margin-left: 20px;
+}
+
+.services-contentSecondItem {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 30px;
+}
+
+.services-contentItem {
+    text-align: center;
 }
 
 .box-slider {

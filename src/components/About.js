@@ -49,8 +49,8 @@ const About = () => {
                             </div>    
                         </div>
                     <div className="box-slider">
-                        <a href="https://drive.google.com/file/d/1RldO_5aJv4cBlj6R7NZPsZK4D_qTXRnk/view?usp=sharing" className="box-sliderDownloadLink"><span>Preuzmite moj CV<i className="fas fa-download"></i></span></a>
-                        <Link to='/portfolio' className='box-sliderPortfolioLink'><span>Portfolio <i className="fas fa-long-arrow-alt-right"></i></span></Link>
+                        <a href="https://drive.google.com/file/d/1RldO_5aJv4cBlj6R7NZPsZK4D_qTXRnk/view?usp=sharing" className="box-sliderDownloadLink"><span>Preuzmite moj CV <i className="fas fa-download"></i></span></a>
+                        <Link to='/portfolio' className='box-sliderPortfolioLink'><span>Portfolio<i className="fas fa-long-arrow-alt-right"></i></span></Link>
                     </div>
                 </div>
             </section>

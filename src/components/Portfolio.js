@@ -8,8 +8,9 @@ import weather from '../assets/images/weather.png';
 import todo from '../assets/images/todoList.png';
 import pixabay from '../assets/images/pixabay.png';
 import girlWarrior from '../assets/images/Margot.jpg';
-import jelena from '../assets/images/Jelena1.jpg';
+import myself from '../assets/images/ja-ilistracija.jpg';
 import table from '../assets/images/Render bilijar.jpg';
+import abroyal from '../assets/images/AB Logo Mockup.jpg'
 
 const Portfolio = () => {
     return (
@@ -21,39 +22,53 @@ const Portfolio = () => {
 
                             <div className="portfolio-items">
                                 <div className="portfolio-item">
+                                        <div className="portfolio-itemImage">
                                         <a href="https://lincura.netlify.app/"><img src={lincura} alt="noImg" className="portfolio-img"></img></a>    
+                                        </div>
                                         <h3 className="portfolio-itemTitle"><a href="https://lincura.netlify.app/" className="portfolio-itemLink">Lincura sajt</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Website</span>
+                                        <a href="https://github.com/nemanjaspasojevic123/lincura_sajt" className="portfolio-itemTitle"><i className="fab fa-github fa-2x"></i></a>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
+                                <div className="portfolio-itemImage">
                                         <a href="https://weathermyapp.netlify.app/"><img src={weather} alt="" className="portfolio-img"></img></a>
+                                        </div>
                                         <h3 className="portfolio-itemTitle"><a href="https://weathermyapp.netlify.app/" className="portfolio-itemLink">Weather App</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>React JS App</span>
+                                        <a href="https://github.com/nemanjaspasojevic123/Weather-App" className="portfolio-itemTitle"><i className="fab fa-github fa-2x"></i></a>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
+                                <div className="portfolio-itemImage">
                                         <a href="https://nemanjaspasojevic123.github.io"><img src={pixabay} alt="" className="portfolio-img"></img></a>  
+                                        </div>
                                         <h3 className="portfolio-itemTitle"><a href="https://nemanjaspasojevic123.github.io" className="portfolio-itemLink">Pixabay Gallery</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>React JS App</span>
+                                        <a href="https://github.com/nemanjaspasojevic123/projekat" className="portfolio-itemTitle"><i className="fab fa-github fa-2x"></i></a>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
+                                <div className="portfolio-itemImage">
                                         <a href="https://mojatodolista.netlify.app/"><img src={todo} alt="" className="portfolio-img"></img></a>
+                                        </div>
                                         <h3 className="portfolio-itemTitle"><a href="https://mojatodolista.netlify.app/" className="portfolio-itemLink">ToDo List</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>React JS App</span>
+                                        <a href="https://github.com/nemanjaspasojevic123/Todo-List" className="portfolio-itemTitle"><i className="fab fa-github fa-2x"></i></a>
                                         </div>
                                 </div>
 
                                 <div className="portfolio-item">
-                                        <a href="#"><img src={table} alt="" className="portfolio-img"></img></a>
+                                <div className="portfolio-itemImage">
+                                        <a href="https://www.behance.net/gallery/101871001/BilliarDining-Table"><img src={table} alt="" className="portfolio-img"></img></a>
+                                        </div>
                                         <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/101871001/BilliarDining-Table" className="portfolio-itemLink">BilliarDining Table</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>3D Design</span>
@@ -61,7 +76,9 @@ const Portfolio = () => {
                                 </div>
 
                                 <div className="portfolio-item">
-                                        <a href="#"><img src={girlWarrior} alt="" className="portfolio-img"></img></a>
+                                <div className="portfolio-itemImage">
+                                        <a href="https://www.behance.net/gallery/104711155/Character-Design-Girl-Warrior"><img src={girlWarrior} alt="" className="portfolio-img"></img></a>
+                                        </div>
                                         <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/104711155/Character-Design-Girl-Warrior" className="portfolio-itemLink">Girl Warrior</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Character Design</span>
@@ -69,10 +86,22 @@ const Portfolio = () => {
                                 </div>
 
                                 <div className="portfolio-item">
-                                        <a href="#"><img src={jelena} alt="" className="portfolio-img"></img></a>
-                                        <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/103926293/Jelena" className="portfolio-itemLink">Jelena</a></h3>
+                                <div className="portfolio-itemImage">
+                                        <a href="https://www.behance.net/gallery/102433605/An-illustration-of-myself"><img src={myself} alt="" className="portfolio-img"></img></a>
+                                        </div>
+                                        <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/102433605/An-illustration-of-myself" className="portfolio-itemLink">Nemanja</a></h3>
                                         <div className="portfolio-itemCategory">
-                                        <span>Character Design</span>
+                                        <span>Illustration</span>
+                                        </div>
+                                </div>
+
+                                <div className="portfolio-item">
+                                <div className="portfolio-itemImage">
+                                        <a href="https://www.behance.net/gallery/103934673/AB-Royal-Logo"><img src={abroyal} alt="" className="portfolio-img"></img></a>
+                                        </div>
+                                        <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/103934673/AB-Royal-Logo" className="portfolio-itemLink">AB Royal</a></h3>
+                                        <div className="portfolio-itemCategory">
+                                        <span>Logo Design </span>
                                         </div>
                                 </div>
                             </div>
@@ -80,7 +109,7 @@ const Portfolio = () => {
 
                         <div className="box-slider">
                             <Link to='/about' className='box-sliderAboutLink'><span><i className="fas fa-long-arrow-alt-left"></i> O meni</span></Link>
-                            <Link to='/services' className='box-sliderServicesLink'><span>Usluge <i className="fas fa-long-arrow-alt-right"></i></span></Link>
+                            <Link to='/services' className='box-sliderServicesLink'><span>Usluge<i className="fas fa-long-arrow-alt-right"></i></span></Link>
                         </div>
                 </section>
         </>

@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+@mixin input-container {
+	position: relative;
+    margin: 25px auto;
+
+    input { 
+        border: 0;
+        border-bottom: 1px solid $primary-color;  
+        background: transparent;
+        width: 100%;
+        padding: 8px 0 5px 0;
+        font-size: 16px;
+        color: $primary-color;
+    }
+
+    textarea {
+        border: 0;
+        border-bottom: 1px solid $primary-color;  
+        background: transparent;
+        width: 100%;
+        padding: 8px 0 5px 0;
+        font-size: 16px;
+        color: $primary-color;
+    }
+    textarea:focus {
+        border: none;	
+        outline: none;
+        border-bottom: 1px solid $secondary-color;	
+    } 
+
+    input:focus { 
+        border: none;	
+        outline: none;
+        border-bottom: 1px solid $secondary-color;	
+    }
+   
+}
+
+ 
+
+ 
+
