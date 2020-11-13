@@ -28,22 +28,22 @@ const About = () => {
                             <div className="about-social">
                                 <div className="about-socialItem">
                                     <div className="about-socialItemIcon">
-                                        <a href="https://www.linkedin.com/in/nemanjaspasojevic/"><i className="fab fa-linkedin fa-3x"></i></a>
+                                        <a href="https://www.linkedin.com/in/nemanjaspasojevic/"><i className="fab fa-linkedin fa-2x"></i></a>
                                     </div>
                                 </div>
                                 <div className="about-socialItem">
                                     <div className="about-socialItemIcon">
-                                        <a href="https://www.instagram.com/majstor.boob/"><i className="fab fa-instagram fa-3x"></i></a>
+                                        <a href="https://www.instagram.com/majstor.boob/"><i className="fab fa-instagram fa-2x"></i></a>
                                     </div>
                                 </div>
                                 <div className="about-socialItem">
                                     <div className="about-socialItemIcon">
-                                        <a href="https://www.behance.net/nemanjaspasojevic"><i className="fab fa-behance fa-3x"></i></a>
+                                        <a href="https://www.behance.net/nemanjaspasojevic"><i className="fab fa-behance fa-2x"></i></a>
                                     </div>
                                 </div>
                                 <div className="about-socialItem">
                                     <div className="about-socialItemIcon">
-                                        <a href="https://github.com/nemanjaspasojevic123"><i className="fab fa-github fa-3x"></i></a>
+                                        <a href="https://github.com/nemanjaspasojevic123"><i className="fab fa-github fa-2x"></i></a>
                                     </div>
                                 </div>
                             </div>    

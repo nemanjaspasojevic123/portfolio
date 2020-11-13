@@ -6,8 +6,9 @@
     position: absolute;
     background-image: url('../images/oqm2ms35x1701.jpg');
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    z-index: -2;
 }
 
 .about {
@@ -36,14 +37,13 @@
 .about-body {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 40px;
 }
 
 .about-imageProfil {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    margin-top: 15px;
+    margin: 15px 15px;
     border: 2px solid $secondary-color;
 }
 
@@ -71,4 +71,155 @@
 
 .box-sliderDownloadLink {
     @include button();
+}
+
+
+@media (max-width: $break-xxs-max) {
+    .about {
+        min-width: 80%;
+     }
+
+    .about-subject {
+        font-size: 2rem;
+    }
+    
+    .about-bodyLeft {
+        width: 100%;
+    }
+
+    .about-subjectText {
+        font-size: 1rem;
+    }
+    
+    .box-sliderPortfolioLink {
+        span {
+            letter-spacing: 0px;
+            font-size: 14px;
+        }
+        height: 50px;
+        width: 70px;
+    }
+
+    .box-sliderDownloadLink {
+        span {
+            letter-spacing: 0px;
+            font-size: 14px;
+        }
+        height: 50px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .box-sliderPortfolioLink {
+        span {
+            letter-spacing: 0px;
+            font-size: 14px;
+        }
+        height: 50px;
+        width: 70px;
+    }
+
+    .box-sliderDownloadLink {
+        span {
+            letter-spacing: 0px;
+            font-size: 14px;
+        }
+        height: 50px;
+        width: 80px;
+    }
+}
+
+.about {
+    @media only screen and (max-width: 600px) {
+        min-width: 80%;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        min-width: 80%;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        min-width: 80%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        min-width: 70%;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        min-width: 60%;
+    } 
+}
+
+.about-subject {
+    @media only screen and (max-width: 600px) {
+        font-size: 2rem;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        font-size: 2.5rem;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        font-size: 4rem;
+    }
+}
+
+.about-subjectText {
+    @media only screen and (max-width: 600px) {
+        font-size: 1rem;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        font-size: 1.2rem;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        font-size: 1.4rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.6rem;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        font-size: 1.8rem;
+    }
+}
+
+.about-imageProfil {
+    @media only screen and (max-width: 600px) {
+      width: 100px;
+      height: 100px;
+    }
+  
+    @media only screen and (min-width: 600px) {
+      width: 170px;
+      height: 170px;
+    }
+  
+    @media only screen and (min-width: 768px) {
+      width: 250px;
+      height: 250px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 300px;
+        height: 300px;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        width: 400px;
+        height: 400px;
+    }
 }
