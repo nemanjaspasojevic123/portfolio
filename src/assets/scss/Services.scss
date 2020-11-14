@@ -6,12 +6,13 @@
     position: absolute;
     background-image: url('../images/oqm2ms35x1701.jpg');
     background-size: cover;
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     z-index: -2;
 }
 
 .services {
+    position: relative;
     display: block;
     justify-content: center;
     align-items: center;
@@ -89,4 +90,114 @@
 
 .box-sliderExperienceLink {
     @include button();
+}
+
+.services-subject {
+    @media only screen and (max-width: 600px) {
+        font-size: 2rem;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        font-size: 2.5rem;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        font-size: 4rem;
+    }
+}
+
+.services-contentFirst {
+    @media only screen and (max-width: 600px) {
+        width: 70%;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        width: 65%;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        width: 60%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 55%;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        width: 50%;
+    }
+}
+
+.services-contentSecondItem {
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  
+    @media only screen and (min-width: 600px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    @media only screen and (min-width: 1250px) {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+.services-box {
+    @media only screen and (max-width: 600px) {
+        height: 180vh;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        height: 130vh;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        height: 120vh;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        height: 110vh;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        height: 100vh;
+    }
+}
+
+.box-sliderPortfolioLink {
+    @media only screen and (max-width: 600px) {
+    span {
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    height: 50px;
+    width: 90px;
+    }
+}
+
+.box-sliderExperienceLink {
+    @media only screen and (max-width: 600px) {
+    span {
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    height: 50px;
+    width: 90px;
+    }
 }

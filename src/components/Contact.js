@@ -65,7 +65,7 @@ const Contact = () => {
             </div>
 
             <div className="box-slider">
-                <Link to='/services' className='box-sliderServicesLink'><span><i className="fas fa-long-arrow-alt-left"></i>  Usluge</span></Link>
+            <Link to='/experience' className="box-sliderExperienceLink"><span><i className="fas fa-long-arrow-alt-left"></i> Iskustvo</span></Link>
                 <Link to='/about' className='box-sliderAboutLink'><span>O meni<i className="fas fa-long-arrow-alt-right"></i></span></Link>
             </div>
         </section>

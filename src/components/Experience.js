@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
-import '../assets/css/Expirience.min.css'
+import '../assets/css/Experience.min.css'
 
 const Experience = () => {
     return (

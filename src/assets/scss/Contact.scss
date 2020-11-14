@@ -44,9 +44,13 @@
 }
 
 .contact-bodyRight {
+    background-color: rgba($color: #444343, $alpha: 0.7);
     color: #ffffff;
     width: fit-content;
     margin-bottom: 20px;
+    text-align: center;
+    width: 300px;
+    border: 2px solid $secondary-color
 }
 
 .form-group {
@@ -62,11 +66,11 @@
     padding: 0 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $primary-color;
+    color: black;
     position: relative;
     background: transparent;
-    :before:hover {
-        border: $secondary-color;
+    ::after {
+        border: 2px solid $secondary-color;
     }
 }
 
@@ -81,4 +85,131 @@
 
 .box-sliderAboutLink {
     @include button();
+}
+
+.contact-box {
+    @media only screen and (min-width: 320px) {
+        height: 140vh;
+    }
+
+    @media only screen and (max-width: 420px) {
+        height: 130vh;
+    }
+
+    @media only screen and (min-width: 500px) {
+        height: 100vh;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        height: 100vh;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        height: 100vh;
+    }
+}
+
+.contact-subject {
+    @media only screen and (max-width: 600px) {
+        font-size: 2rem;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        font-size: 2.5rem;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        font-size: 4rem;
+    }
+}
+
+.contact-bodyItem {
+    @media only screen and (max-width: 600px) {
+        display: block;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        display: block;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        display: flex;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        display: flex;
+    }
+}
+
+.contact-bodyLeft {
+    @media only screen and (max-width: 600px) {
+        margin: 0 auto 20px;
+        width: 200px;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        margin: 0 auto 20px;
+        width: 300px;
+    }
+    @media only screen and (min-width: 768px) {
+        margin: 0 auto 20px;
+        width: 350px;
+    }
+}
+
+.contact-bodyRight {
+    @media only screen and (max-width: 600px) {
+        margin: 0 auto 20px;
+        width: 200px;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        margin: 0 auto 20px;
+        width: 300px;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        margin: 0 auto 20px;
+        width: 300px;
+    }
+}
+
+.contact-boxRowText {
+    @media only screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+.box-sliderExperienceLink {
+    @media only screen and (max-width: 600px) {
+    span {
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    height: 50px;
+    width: 110px;
+    }
+}
+
+.box-sliderAboutLink {
+    @media only screen and (max-width: 600px) {
+    span {
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    height: 50px;
+    width: 90px;
+    }
 }

@@ -2,7 +2,7 @@
 @import '../animations';
 @import '../buttons';
 
-.education-box {
+.experience-box {
     position: absolute;
     background-image: url('../images/oqm2ms35x1701.jpg');
     background-size: cover;
@@ -11,35 +11,29 @@
     z-index: -2;
 }
 
-.education {
+.experience {
     position: relative;
-    background-image: url('../images/desktop-2070678.png');
+    background-image: url('../images/cube-2415399.jpg');
     background-size: cover;
     margin: 10px auto;
     width: 80%;
     border: 2px solid $secondary-color;
 }
 
-.education-boxItem {
-    width: max-content;
-    border-bottom: 2px solid $secondary-color;
-    color: #ffffff;
-    margin: 0 0 20px 20px;
-}
-
-.education-boxItemTitle {
-    text-decoration: none;
-    color: #ffffff;
-    :hover {
-        color: $secondary-color
-    }
-}
-
-.education-subject {
+.experience-subject {
     font-size: 5rem;
     opacity: 0.5;
     color: $secondary-light-color;
     margin: 0 0 5px 20px;
+}
+
+.experience-boxItem {
+    width: 300px;
+    margin: 20px 0 20px 20px;
+    border: 2px solid $secondary-color;
+    background-color: rgba($color: #bdbcbc, $alpha: 0.7);
+    padding: 20px;
+    font-weight: bold;
 }
 
 .box-slider {
@@ -47,15 +41,15 @@
     justify-content: space-between;
 }
 
-.box-sliderServicesLink {
+.box-sliderEducationLink {
     @include button();
 }
 
-.box-sliderExperienceLink {
+.box-sliderContactLink {
     @include button();
 }
 
-.education-subject {
+.experience-subject {
     @media only screen and (max-width: 600px) {
         font-size: 2rem;
     }
@@ -77,73 +71,32 @@
     }
 }
 
-.education-boxItemTitle {
+.experience-boxItem {
     @media only screen and (max-width: 600px) {
-        font-size: 0.6rem;
+        width: 170px;
+        margin: 20px auto;
     }
   
     @media only screen and (min-width: 600px) {
-        font-size: 0.7rem;
+        width: 170px;
+        margin: 20px auto;
     }
   
     @media only screen and (min-width: 768px) {
-        font-size: 0.8rem;
+        width: 200px;
+        margin: 20px auto;
     }
 
     @media only screen and (min-width: 1024px) {
-        font-size: 0.9rem;
+        width: 250px;
     }
 
     @media only screen and (min-width: 1250px) {
-        font-size: 1rem;
+        width: 300px;
     }
 }
 
-.education-boxItemSubtitle {
-    @media only screen and (max-width: 600px) {
-        font-size: 0.7rem;
-    }
-  
-    @media only screen and (min-width: 600px) {
-        font-size: 0.8rem;
-    }
-  
-    @media only screen and (min-width: 768px) {
-        font-size: 0.85rem;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        font-size: 0.9rem;
-    }
-
-    @media only screen and (min-width: 1250px) {
-        font-size: 1rem;
-    }
-}
-
-.time {
-    @media only screen and (max-width: 600px) {
-        font-size: 0.7rem;
-    }
-  
-    @media only screen and (min-width: 600px) {
-        font-size: 0.75rem;
-    }
-  
-    @media only screen and (min-width: 768px) {
-        font-size: 0.85rem;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        font-size: 0.9rem;
-    }
-
-    @media only screen and (min-width: 1250px) {
-        font-size: 1rem;
-    }
-}
-
-.box-sliderServicesLink {
+.box-sliderEducationLink {
     @media only screen and (max-width: 600px) {
     span {
         letter-spacing: 0px;
@@ -154,7 +107,7 @@
     }
 }
 
-.box-sliderExperienceLink {
+.box-sliderContactLink {
     @media only screen and (max-width: 600px) {
     span {
         letter-spacing: 0px;

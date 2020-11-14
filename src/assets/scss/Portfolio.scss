@@ -40,19 +40,34 @@
 .portfolio-item {
     width: 450px;
     border: 3px solid $secondary-color;
+    border-radius: 15px;
     background-color: rgba($color: #0f0f0f, $alpha: 0.8);
     padding: 20px;
 }
 
 .portfolio-itemImage {
     width: 450px;
-    height: 270px;
+    height: 270px;  
 }
+
+.portfolio-itemImage::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to top, transparent 0%, rgba(88, 235, 198, 0.664) 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    border-radius: 10px;
+    margin-top: -275px;
+    height: 270px;
+    width: 100%;
+    content: '';
+  }
+
 
 .portfolio-img {
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .portfolio-itemLink {
@@ -83,4 +98,168 @@
 
 .box-sliderServicesLink {
     @include button();
+}
+
+.portfolio-itemImage::after {
+    @media only screen and (max-width: 600px) {
+        margin-top: -155px;
+        height: 150px;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        margin-top: -185px;
+        height: 180px;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        margin-top: -215px;
+        height: 210px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin-top: -245px;
+        height: 240px;
+    }
+
+    @media only screen and (min-width: 1300px) {
+        margin-top: -275px;
+        height: 270px;
+    } 
+}
+
+.portfolio {
+    @media only screen and (max-width: 600px) {
+        min-width: 90%;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        min-width: 85%;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        min-width: 80%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        min-width: 80%;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        min-width: 80%;
+    } 
+}
+
+.portfolio-subject {
+    @media only screen and (max-width: 600px) {
+        font-size: 2rem;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        font-size: 2.5rem;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        font-size: 4rem;
+    }
+}
+
+.portfolio-items {
+    @media only screen and (max-width: 600px) {
+        display: block;
+    }
+    @media only screen and (min-width: 600px) {
+        display: block;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        display: grid;
+    }
+}
+
+.portfolio-item {
+    @media only screen and (max-width: 600px) {
+        width: 200px;
+        margin: 0px auto 20px;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        width: 300px;
+        margin: 0px auto 20px;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        width: 350px;
+        margin: 0px auto 20px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 400px;
+        margin: 0px auto 20px;
+    }
+
+    @media only screen and (min-width: 1300px) {
+        width: 450px;
+        margin: 0px auto 20px;
+    }
+}   
+
+.portfolio-itemImage {
+    @media only screen and (max-width: 600px) {
+        width: 200px;
+        height: 150px;
+    }
+  
+    @media only screen and (min-width: 600px) {
+        width: 300px;
+        height: 180px;
+    }
+  
+    @media only screen and (min-width: 768px) {
+        width: 350px;
+        height: 210px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 400px;
+        height: 240px;
+    }
+
+    @media only screen and (min-width: 1300px) {
+        width: 450px;
+        height: 270px;
+    }
+}
+
+.box-sliderAboutLink {
+    @media only screen and (max-width: 600px) {
+    span {
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    height: 50px;
+    width: 80px;
+    }
+}
+
+.box-sliderServicesLink {
+    @media only screen and (max-width: 600px) {
+    span {
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+    height: 50px;
+    width: 80px;
+    }
 }
