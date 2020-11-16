@@ -14,10 +14,16 @@ const About = () => {
                     <div className="about">
                             <div className="about-body">
                                 <div className="about-bodyLeft">
-                                    <h1 className='about-subject'>O meni</h1>
-                                    <div className='about-subjectText'>
+                                    <h1 className="about-subject">O meni</h1>
+                                    <div className="about-subjectText">
                                     <p>Zdravo, ja sam Nemanja.</p>
                                     <p>Dizajner i Front End Developer.</p>
+                                    <div className="about-subjectSubtext">
+                                    <p>Godine:</p><h3 className="about-subjectSubtextLeft">28</h3>
+                                    </div>
+                                    <div className="about-subjectSubtext">
+                                    <p>Grad:</p><h3 className="about-subjectSubtextLeft">Beograd</h3>
+                                    </div>
                                     </div>
                                 </div>
                                 <div className="about-image">
