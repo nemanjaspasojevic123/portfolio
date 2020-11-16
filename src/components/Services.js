@@ -115,7 +115,7 @@ const Services = () => {
                         </div>
                         <div className="box-slider">
                             <Link to='/portfolio' className='box-sliderPortfolioLink'><span><i className="fas fa-long-arrow-alt-left"></i> Portfolio</span></Link>
-                            <Link to='/experience' className='box-sliderExperienceLink'><span>Iskustvo <i className="fas fa-long-arrow-alt-right"></i></span></Link>
+                            <Link to='/education' className='box-sliderEducationLink'><span>Obrazovanje<i className="fas fa-long-arrow-alt-right"></i></span></Link>
                         </div>
                     </div>
                 </section>
