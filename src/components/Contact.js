@@ -1,9 +1,23 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import NavBar from './NavBar';
 import '../assets/css/Contact.min.css'
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'template_memimail', e.target, 'user_fWkE8RDeYOrr1dbPXKpky')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          })
+          e.target.reset()
+    }
+
     return (
         <>
         <NavBar />
@@ -13,7 +27,7 @@ const Contact = () => {
                     <h1 className="contact-subject">Kontakt</h1>
                     <div className="contact-bodyItem">
                         <div className="contact-bodyLeft">
-                            <form className="form">
+                            <form className="form" onSubmit={sendEmail}>
                                 <div className="form-group">
                                     <input type="text" name="name" id="name" placeholder="Vaše ime" required autoComplete="off" />
                                 </div>
@@ -26,8 +40,8 @@ const Contact = () => {
                                 <div className="form-group">
                                     <textarea name="message" id="message" placeholder="Vaša poruka"></textarea>
                                 </div>
+                                <button className="form-submit">Pošalji</button>
                             </form>
-                            <button className="form-submit">Pošalji</button>
                         </div>
                         <div className="contact-bodyRight">
                             <div className="contact-boxItem">
