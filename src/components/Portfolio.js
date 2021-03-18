@@ -10,7 +10,9 @@ import pixabay from '../assets/images/pixabay.png';
 import girlWarrior from '../assets/images/Margot.jpg';
 import myself from '../assets/images/ja-ilistracija.jpg';
 import table from '../assets/images/Render bilijar.jpg';
-import abroyal from '../assets/images/AB Logo Mockup.jpg'
+import abroyal from '../assets/images/AB Logo Mockup.jpg';
+import grand from '../assets/images/Grand.png';
+import diopta from '../assets/images/Diopta_presentation_final.png'
 
 const Portfolio = () => {
     return (
@@ -22,7 +24,7 @@ const Portfolio = () => {
 
                             <div className="portfolio-items">
                                 <div className="portfolio-item">
-                                        <div className="portfolio-itemImage">
+                                <div className="portfolio-itemImage">
                                         <a href="https://lincura.netlify.app/" target="_blank" rel="noreferrer"><img src={lincura} alt="noImg" className="portfolio-img"></img></a>    
                                         </div>
                                         <h3 className="portfolio-itemTitle"><a href="https://lincura.netlify.app/" target="_blank" rel="noreferrer" className="portfolio-itemLink">Lincura sajt</a></h3>
@@ -40,6 +42,17 @@ const Portfolio = () => {
                                         <div className="portfolio-itemCategory">
                                         <span>React JS App</span>
                                         <a href="https://github.com/nemanjaspasojevic123/Weather-App" target="_blank" rel="noreferrer" className="portfolio-itemTitle"><i className="fab fa-github fa-2x"></i></a>
+                                        </div>
+                                </div>
+
+                                <div className="portfolio-item">
+                                <div className="portfolio-itemImage">
+                                        <a href="https://grandfront.netlify.app/" target="_blank" rel="noreferrer"><img src={grand} alt="noImg" className="portfolio-img"></img></a>    
+                                        </div>
+                                        <h3 className="portfolio-itemTitle"><a href="https://grandfront.netlify.app/" target="_blank" rel="noreferrer" className="portfolio-itemLink">Grand sajt</a></h3>
+                                        <div className="portfolio-itemCategory">
+                                        <span>Website</span>
+                                        <a href="https://github.com/nemanjaspasojevic123/grand_front" target="_blank" rel="noreferrer" className="portfolio-itemTitle"><i className="fab fa-github fa-2x"></i></a>
                                         </div>
                                 </div>
 
@@ -72,6 +85,16 @@ const Portfolio = () => {
                                         <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/101871001/BilliarDining-Table" target="_blank" rel="noreferrer" className="portfolio-itemLink">BilliarDining Table</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>3D Design</span>
+                                        </div>
+                                </div>
+
+                                <div className="portfolio-item">
+                                <div className="portfolio-itemImage">
+                                        <a href="https://www.behance.net/gallery/115733555/Diopta-Website-Redesign" target="_blank" rel="noreferrer"><img src={diopta} alt="" className="portfolio-img"></img></a>
+                                        </div>
+                                        <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/115733555/Diopta-Website-Redesign" target="_blank" rel="noreferrer" className="portfolio-itemLink">Diopta</a></h3>
+                                        <div className="portfolio-itemCategory">
+                                        <span>Website Redesign</span>
                                         </div>
                                 </div>
 
