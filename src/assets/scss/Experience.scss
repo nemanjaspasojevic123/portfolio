@@ -20,6 +20,10 @@
     border: 2px solid $secondary-color;
 }
 
+.experience-boxItems {
+    display: flex;
+}
+
 .experience-subject {
     font-size: 5rem;
     opacity: 0.5;
@@ -115,5 +119,11 @@
     }
     height: 50px;
     width: 90px;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .experience-boxItems {
+        display: block;
     }
 }
