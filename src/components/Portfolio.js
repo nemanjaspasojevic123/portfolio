@@ -85,6 +85,7 @@ const Portfolio = () => {
                                         <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/101871001/BilliarDining-Table" target="_blank" rel="noreferrer" className="portfolio-itemLink">BilliarDining Table</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>3D Design</span>
+                                        <a href="https://www.behance.net/gallery/101871001/BilliarDining-Table" target="_blank" rel="noreferrer" className="portfolio-itemTitle"><i className="fab fa-behance fa-2x"></i></a>
                                         </div>
                                 </div>
 
@@ -95,6 +96,7 @@ const Portfolio = () => {
                                         <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/115733555/Diopta-Website-Redesign" target="_blank" rel="noreferrer" className="portfolio-itemLink">Diopta</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Website Redesign</span>
+                                        <a href="https://www.behance.net/gallery/115733555/Diopta-Website-Redesign" target="_blank" rel="noreferrer" className="portfolio-itemTitle"><i className="fab fa-behance fa-2x"></i></a>
                                         </div>
                                 </div>
 
@@ -105,6 +107,7 @@ const Portfolio = () => {
                                         <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/104711155/Character-Design-Girl-Warrior" target="_blank" rel="noreferrer" className="portfolio-itemLink">Girl Warrior</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Character Design</span>
+                                        <a href="https://www.behance.net/gallery/104711155/Character-Design-Girl-Warrior" target="_blank" rel="noreferrer" className="portfolio-itemTitle"><i className="fab fa-behance fa-2x"></i></a>
                                         </div>
                                 </div>
 
@@ -115,6 +118,7 @@ const Portfolio = () => {
                                         <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/102433605/An-illustration-of-myself" target="_blank" rel="noreferrer" className="portfolio-itemLink">Nemanja</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Illustration</span>
+                                        <a href="https://www.behance.net/gallery/102433605/An-illustration-of-myself" target="_blank" rel="noreferrer" className="portfolio-itemTitle"><i className="fab fa-behance fa-2x"></i></a>
                                         </div>
                                 </div>
 
@@ -125,6 +129,7 @@ const Portfolio = () => {
                                         <h3 className="portfolio-itemTitle"><a href="https://www.behance.net/gallery/103934673/AB-Royal-Logo" target="_blank" rel="noreferrer" className="portfolio-itemLink">AB Royal</a></h3>
                                         <div className="portfolio-itemCategory">
                                         <span>Logo Design </span>
+                                        <a href="https://www.behance.net/gallery/103934673/AB-Royal-Logo" target="_blank" rel="noreferrer" className="portfolio-itemTitle"><i className="fab fa-behance fa-2x"></i></a>
                                         </div>
                                 </div>
                             </div>

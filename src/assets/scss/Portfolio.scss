@@ -16,7 +16,7 @@
     background-image: url('../images/abstract-5035370.jpg');
     background-size: cover;
     margin: 10px auto;
-    width: 80%;
+    width: 90%;
     border: 2px solid $secondary-color;
 }
 
@@ -31,36 +31,29 @@
 .portfolio-items {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
     text-align: center;
     margin: 20px;
 }
 
 .portfolio-item {
-    width: 450px;
-    border: 3px solid $secondary-color;
+    width: 80%;
+    height: fit-content;
+    border: 1px solid $secondary-color;
     border-radius: 15px;
     background-color: rgba($color: #0f0f0f, $alpha: 0.8);
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .portfolio-itemImage {
-    width: 450px;
-    height: 270px;  
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;  
 }
-
-.portfolio-itemImage::after {
-    display: block;
-    position: relative;
-    background-image: linear-gradient(to top, transparent 0%, rgba(94, 240, 203, 0.274) 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-    border-radius: 10px;
-    margin-top: -275px;
-    height: 270px;
-    width: 100%;
-    content: '';
-  }
 
 
 .portfolio-img {
@@ -100,166 +93,24 @@
     @include button();
 }
 
-.portfolio-itemImage::after {
-    @media only screen and (max-width: 600px) {
-        margin-top: -155px;
-        height: 150px;
+@media screen and (max-width: 1200px) {
+    .portfolio-items {
+        grid-template-columns: repeat(2, 1fr);
     }
-  
-    @media only screen and (min-width: 600px) {
-        margin-top: -185px;
-        height: 180px;
-    }
-  
-    @media only screen and (min-width: 768px) {
-        margin-top: -215px;
-        height: 210px;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        margin-top: -245px;
-        height: 240px;
-    }
-
-    @media only screen and (min-width: 1300px) {
-        margin-top: -275px;
-        height: 270px;
-    } 
 }
 
-.portfolio {
-    @media only screen and (max-width: 600px) {
-        min-width: 90%;
+@media screen and (max-width: 675px) {
+    .portfolio-items {
+        grid-template-columns: repeat(1, 1fr);
     }
-  
-    @media only screen and (min-width: 600px) {
-        min-width: 85%;
-    }
-  
-    @media only screen and (min-width: 768px) {
-        min-width: 80%;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        min-width: 80%;
-    }
-
-    @media only screen and (min-width: 1250px) {
-        min-width: 80%;
-    } 
-}
-
-.portfolio-subject {
-    @media only screen and (max-width: 600px) {
-        font-size: 2rem;
-    }
-  
-    @media only screen and (min-width: 600px) {
-        font-size: 2.5rem;
-    }
-  
-    @media only screen and (min-width: 768px) {
+    .portfolio-subject {
         font-size: 3rem;
     }
-
-    @media only screen and (min-width: 1024px) {
-        font-size: 3.5rem;
-    }
-
-    @media only screen and (min-width: 1250px) {
-        font-size: 4rem;
-    }
 }
 
-.portfolio-items {
-    @media only screen and (max-width: 600px) {
-        display: block;
-    }
-    @media only screen and (min-width: 600px) {
-        display: block;
-    }
-  
-    @media only screen and (min-width: 768px) {
-        display: block;
-    }
-
-    @media only screen and (min-width: 1250px) {
-        display: grid;
-    }
-}
-
-.portfolio-item {
-    @media only screen and (max-width: 600px) {
-        width: 200px;
-        margin: 0px auto 20px;
-    }
-  
-    @media only screen and (min-width: 600px) {
-        width: 300px;
-        margin: 0px auto 20px;
-    }
-  
-    @media only screen and (min-width: 768px) {
-        width: 350px;
-        margin: 0px auto 20px;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        width: 400px;
-        margin: 0px auto 20px;
-    }
-
-    @media only screen and (min-width: 1300px) {
-        width: 450px;
-        margin: 0px auto 20px;
-    }
-}   
-
-.portfolio-itemImage {
-    @media only screen and (max-width: 600px) {
-        width: 200px;
-        height: 150px;
-    }
-  
-    @media only screen and (min-width: 600px) {
-        width: 300px;
-        height: 180px;
-    }
-  
-    @media only screen and (min-width: 768px) {
-        width: 350px;
-        height: 210px;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        width: 400px;
-        height: 240px;
-    }
-
-    @media only screen and (min-width: 1300px) {
-        width: 450px;
-        height: 270px;
-    }
-}
-
-.box-sliderAboutLink {
-    @media only screen and (max-width: 600px) {
-    span {
-        letter-spacing: 0px;
-        font-size: 12px;
-    }
-    height: 50px;
-    width: 80px;
-    }
-}
-
-.box-sliderServicesLink {
-    @media only screen and (max-width: 600px) {
-    span {
-        letter-spacing: 0px;
-        font-size: 12px;
-    }
-    height: 50px;
-    width: 80px;
-    }
+* {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    font-size: calc(13px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 }
