@@ -19,10 +19,27 @@ const About = () => {
                                     <p>Zdravo, ja sam Nemanja.</p>
                                     <p>Dizajner i Front End Developer.</p>
                                     <div className="about-subjectSubtext">
-                                    <label>Godine:</label><label className="about-subjectSubtextLeft">28</label>
+                                    <label>Godine: </label><label className="about-subjectSubtextLeft"> 28</label>
                                     </div>
                                     <div className="about-subjectSubtext">
-                                    <label>Grad:</label><label className="about-subjectSubtextLeft">Beograd</label>
+                                    <label>Grad: </label><label className="about-subjectSubtextLeft"> Beograd</label>
+                                    </div>
+                                    <div className="about-subjectInterestSubtext">
+                                    <label>Interesovanja: </label>
+                                    <div className="about-subjectInterestLeft">
+                                        <div className="about-InterestLeftsocialItemIcon">
+                                        <i className="fa fa-basketball-ball fa-2x"></i>
+                                        </div>
+                                        <div className="about-InterestLeftsocialItemIcon">
+                                        <i className="fa fa-pencil-ruler fa-2x"></i>
+                                        </div>
+                                        <div className="about-InterestLeftsocialItemIcon">
+                                        <i className="fa fa-camera fa-2x"></i>
+                                        </div>
+                                        <div className="about-InterestLeftsocialItemIcon">
+                                        <i className="fa fa-tools fa-2x"></i>
+                                        </div>
+                                    </div>
                                     </div>
                                     </div>
                                 </div>
