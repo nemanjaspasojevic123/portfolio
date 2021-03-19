@@ -172,7 +172,7 @@
 .contact-bodyRight {
     @media only screen and (max-width: 600px) {
         margin: 0 auto 20px;
-        width: 200px;
+        width: 240px;
     }
   
     @media only screen and (min-width: 600px) {
@@ -211,5 +211,11 @@
     }
     height: 50px;
     width: 90px;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .contact-box {
+        height: fit-content;
     }
 }

@@ -19,10 +19,10 @@ const About = () => {
                                     <p>Zdravo, ja sam Nemanja.</p>
                                     <p>Dizajner i Front End Developer.</p>
                                     <div className="about-subjectSubtext">
-                                    <p>Godine:</p><h3 className="about-subjectSubtextLeft">28</h3>
+                                    <label>Godine:</label><label className="about-subjectSubtextLeft">28</label>
                                     </div>
                                     <div className="about-subjectSubtext">
-                                    <p>Grad:</p><h3 className="about-subjectSubtextLeft">Beograd</h3>
+                                    <label>Grad:</label><label className="about-subjectSubtextLeft">Beograd</label>
                                     </div>
                                     </div>
                                 </div>
